@@ -16,7 +16,7 @@ services:
       DB_NAME: grimer
 
   db:
-    image: mariadb:latest
+    image: hypriot/rpi-mysql:latest
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password

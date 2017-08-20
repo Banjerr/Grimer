@@ -1,4 +1,4 @@
-FROM php:7.0-apache
+FROM deigray/rpi-lamp:latest
 
 COPY . /var/www/html/
 
