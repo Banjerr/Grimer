@@ -16,10 +16,13 @@ services:
       DB_NAME: grimer
 
   db:
-    image: postgres:latest
+    image: mariadb:latest
     restart: always
     environment:
-      POSTGRES_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: grimer
+      MYSQL_USER: grimerAdmin
+      MYSQL_PASSWORD: password
     volumes:
       - db-data:/var/lib/mysql
 
