@@ -1,3 +1,8 @@
+<?php
+require 'vendor/autoload.php';
+use HelloWorld\SayHello;
+echo SayHello::world();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,5 +16,6 @@
     <img src="/grimer.gif"/>
     <h1>GRIMER</h1>
     <p>... just getting started ...</p>
+
   </body>
 </html>
